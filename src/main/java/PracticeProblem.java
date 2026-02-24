@@ -22,10 +22,7 @@ public class PracticeProblem {
 	}
 	public static final int MAXIMUM = 10;
 	public static boolean totalWordsChecker(String a) {
-		if (a.split("[^a-zA-Z']+").length <= MAXIMUM) {
-			return true;
-		}
-		return false;
+		return a.split("[^a-zA-Z'_]+").length <= MAXIMUM;
 	}
 
 	public static String minString (String a, String b, String c) {
